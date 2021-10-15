@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<div class="loader-container" style="z-index: 2000">
+  <div class="loader">Loading...</div>
+</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aung Myat Thu</title>
+    <link rel="icon" href="./src/img/26885.png">
+    <style>
+      .loader-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 2000;
+      }
+      .loader {
+        color: rgb(251, 255, 0);
+        font-size: 20px;
+        margin: 100px auto;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        position: relative;
+        text-indent: -9999em;
+        -webkit-animation: load4 1.3s infinite linear;
+        animation: load4 1.3s infinite linear;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+      @-webkit-keyframes load4 {
+        0%,
+        100% {
+          box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 0;
+        }
+        12.5% {
+          box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+            0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+        }
+        25% {
+          box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+            0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+        }
+        37.5% {
+          box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0,
+            2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em,
+            -2em -2em 0 -1em;
+        }
+        50% {
+          box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em,
+            2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em,
+            -2em -2em 0 -1em;
+        }
+        62.5% {
+          box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0,
+            -2em -2em 0 -1em;
+        }
+        75% {
+          box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em,
+            -2em -2em 0 0;
+        }
+        87.5% {
+          box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0,
+            -2em -2em 0 0.2em;
+        }
+      }
+      @keyframes load4 {
+        0%,
+        100% {
+          box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 0;
+        }
+        12.5% {
+          box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+            0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+        }
+        25% {
+          box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+            0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+        }
+        37.5% {
+          box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0,
+            2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em,
+            -2em -2em 0 -1em;
+        }
+        50% {
+          box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em,
+            2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em,
+            -2em -2em 0 -1em;
+        }
+        62.5% {
+          box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0,
+            -2em -2em 0 -1em;
+        }
+        75% {
+          box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em,
+            -2em -2em 0 0;
+        }
+        87.5% {
+          box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0,
+            -2em -2em 0 0.2em;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./vendor/feather-icons-web/feather.css" />
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vendor/animate_it/animate.css" />
+    <link rel="stylesheet" href="./vendor/venobox/venobox.css" />
+    <link rel="stylesheet" href="./vendor/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./vendor/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="">
+    <header
+      class="header w-100 site-nav wow animate__slideInDown bg-light shadow-sm"
+    >
+      <nav class="navbar navbar-expand-lg p-1 navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./src/img/1x/Asset 5.png" style="width: 80px;" class="mx-3" alt="">
+          </a>
+
+          <i
+            class="feather-x navbar-toggler-cross d-none d-lg-none mx-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="font-size: 30px"
+          ></i>
+          <i
+            class="feather-menu navbar-toggler d-lg-none mx-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="font-size: 30px"
+          ></i>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item mx-3 mb-0">
+                <a
+                  class="nav-link text-dark text-center text-uppercase pb-0"
+                  href="#Home"
+                  ><t>Home</t></a
+                >
+              </li>
+              <li class="nav-item mx-3 mb-0">
+                <a
+                  class="nav-link text-dark text-center text-uppercase pb-0"
+                  href="#About"
+                  ><t>About</t></a
+                >
+              </li>
+              <li class="nav-item mx-3 mb-0">
+                <a
+                  class="nav-link text-dark text-center text-uppercase pb-0"
+                  href="#Projects"
+                  ><t>Abilities</t></a
+                >
+              </li>
+              <li class="nav-item mx-3 mb-0">
+                <a
+                  class="nav-link text-dark text-center text-uppercase pb-0"
+                  href="#Contact"
+                  ><t>Contact</t></a
+                >
+              </li>
+              <li class="nav-item">
+                <div
+                  class="mode-changer btn animate__animated animate__slideInUp"
+                  onclick="changeMode()"
+                >
+                  <i class="feather-sun feather-moon" id="modeIcon"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="Home" id="Home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container homeSub">
+            <div
+              class="
+                row
+                d-flex
+                justify-content-center
+                align-items-center
+                min-vh-100
+              "
+            >
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="
+                      col-12 col-md-6
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      mb-5
+                      ani-delay-2
+                    "
+                  >
+                    <div class="mt-5">
+                      <h3 class="text-center my-3 wow animate__fadeInUp ani-delay-4">
+                        I am
+                        <span class="mx-1 typeText" style="font-size: 40px"></span>
+                      </h3>
+                      <p class="text-center wow animate__fadeInUp ani-delay-6" >
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Nesciunt nemo facere omnis magni cupiditate? Porro modi
+                        similique obcaecati sicta?
+                      </p>
+                      <div class="text-center">
+                        <a href="#"
+                          ><button class="btn btn-outline-light shadow">Download CV</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-md-6"
+                    style="visibility: visible; animation-name: fadeInRight"
+                  >
+                    <div
+                      class="
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        h-100
+                        wow
+                        animate__fadeInRight
+                        ani-delay-2
+                      "
+                    >
+                      <img
+                        class="w-75"
+                        src="./src/img/undraw_Welcome_re_h3d9.svg"
+                        alt="AungMyatThu"
+                      />
+                    </div>
+                  </div>
+                </div>
+                
+                <div
+                  class="
+                    row
+                    d-flex
+                    justify-content-center
+                    mt-5
+                    social-div
+                    wow
+                    animate__fadeInDown
+                    ani-delay-4
+                  "
+                >
+                  <a href="https://www.facebook.com/offaung.offaung/" class="icon my-2">
+                    <i class="h3 feather-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/aung_790/" class="icon my-2">
+                    <i class="h3 feather-instagram"></i>
+                  </a>
+                  <a href="https://mobile.twitter.com/aungmya78600461" class="icon my-2">
+                    <i class="h3 feather-twitter"></i>
+                  </a>
+                  <a href="https://github.com/Aung67890" class="icon my-2">
+                    <i class="h3 feather-github"></i>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <a
+                    href="#About"
+                    class="
+                      scroll-to-next
+                      icon
+                      wow
+                      animate__bounce animate__animated
+                    "
+                    style="
+                      animation-iteration-count: infinite;
+                      visibility: visible;
+                      animation-name: bounce;
+                      z-index: 10;
+                    "
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="brown"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      height="2.5em"
+                      width="2.5em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M11.141 4c-1.582 0-2.387.169-3.128.565a3.453 3.453 0 0 0-1.448 1.448C6.169 6.753 6 7.559 6 9.14v5.718c0 1.582.169 2.387.565 3.128.337.63.818 1.111 1.448 1.448.74.396 1.546.565 3.128.565h1.718c1.582 0 2.387-.169 3.128-.565a3.453 3.453 0 0 0 1.448-1.448c.396-.74.565-1.546.565-3.128V9.14c0-1.582-.169-2.387-.565-3.128a3.453 3.453 0 0 0-1.448-1.448C15.247 4.169 14.441 4 12.86 4H11.14zm0-2h1.718c2.014 0 3.094.278 4.072.801a5.452 5.452 0 0 1 2.268 2.268c.523.978.801 2.058.801 4.072v5.718c0 2.014-.278 3.094-.801 4.072a5.452 5.452 0 0 1-2.268 2.268c-.978.523-2.058.801-4.072.801H11.14c-2.014 0-3.094-.278-4.072-.801a5.452 5.452 0 0 1-2.268-2.268C4.278 17.953 4 16.873 4 14.859V9.14c0-2.014.278-3.094.801-4.072A5.452 5.452 0 0 1 7.07 2.801C8.047 2.278 9.127 2 11.141 2zM11 6h2v5h-2V6z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slant"></div>
+        </div>
+        <div class="arrowDiv">
+          <div class="">
+            <svg stroke="currentColor" fill="red" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M3,19h18c0.372,0,0.713-0.207,0.886-0.536c0.173-0.329,0.148-0.727-0.063-1.033l-9-13c-0.373-0.539-1.271-0.539-1.645,0 l-9,13c-0.212,0.306-0.236,0.704-0.063,1.033C2.287,18.793,2.628,19,3,19z M12,6.757L19.092,17H4.908L12,6.757z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="About " id="About">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container">
+            <div class="row min-vh-100 d-flex align-items-center justify-content-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-6 pt-5 mt-5 wow animate__fadeInUp ani-delay-2">
+                    <div class="d-flex align-items-center justify-content-center">
+                      <img
+                        src="./src/img/undraw_Profile_re_4a55.svg"
+                        class="w-75"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 my-5 wow animate__fadeInUp  ani-delay-4">
+                    <div class="container">
+                      <div
+                        class="row d-flex justify-content-start align-items-center"
+                      >
+                        <p class="">
+                          Hi, I am <strong>Aung Myat Thu</strong> and I am studying
+                          <strong>SWD</strong> at <strong>MMS IT</strong>
+                        </p>
+                        <t class="pb-3 mb-3"
+                          >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Perferendis, autem. Assumenda, similique repudiandae
+                          laudantium, facere sit possimus voluptatum sed pariatur
+                          quibusdam ab rem labore iusto est sequi fugit dicta
+                          placeat.</t
+                        >
+                        <button class="btn btn-outline-danger">More About Me</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 py-3 wow animate__fadeInUp  ani-delay-4 mt-5">
+                    <div class="container">
+                      <div class="row d-flex justify-content-center">
+                        <div class="container-fluid">
+                          <div class="row d-flex">
+                            <div class="col-12 col-md-6 my-3 ">
+                              <h5 class="text-center">Main Skills</h5>
+                              <t class="text-center"
+                                >Lorem ipsum dot nisi beatae suscipit mollitia
+                                laborum doloremque rem ab officia, distinctio nulla
+                                qui ea neque magni eveniet placeat!</t
+                              >
+                            </div>
+                            <div class="col-12 col-md-6 my-3 wow animate__fadeInUp  ani-delay-5">
+                              <h5 class="text-center">Main Skills</h5>
+                              <t class="text-center"
+                                >Lorem ipsum dot nisi beatae suscipit mollitia
+                                laborum doloremque rem ab officia, distinctio nulla
+                                qui ea neque magni eveniet placeat!</t
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slant-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Projects py-5" id="Projects">
+      <div class="container mt-5">
+        <div class="row min-vh-100 d-flex align-items-center">
+          <div class="container-fluid mt-5 pt-5">
+            <div class="row d-flex">
+              <div class="col-12 col-md-6 wow animate__fadeInLeft ani-delay-2">
+                <div class="col-12">
+                  <h3 class="text-uppercase text-center">
+                    <strong>Skill Sets</strong>
+                  </h3>
+                </div>
+                <div class="text-center py-3">
+                  <p class="mb-0">HTML</p>
+                  <div class="" id="progress1"></div>
+                </div>
+                <div class="text-center py-3">
+                  <p class="mb-0">CSS</p>
+                  <div class="" id="progress2"></div>
+                </div>
+                <div class="text-center py-3">
+                  <p class="mb-0">Bootstrap</p>
+                  <div class="" id="progress3"></div>
+                </div>
+                <div class="text-center py-3">
+                  <p class="mb-0">Javascript</p>
+                  <div class="" id="progress4"></div>
+                </div>
+                <div class="text-center py-3">
+                  <p class="mb-0">NodeJs</p>
+                  <div class="" id="progress5"></div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 wow animate__fadeInRight ani-delay-3">
+                <div class="container mt-5 pt-5">
+                  <div
+                    class="row d-flex justify-content-end align-items-center"
+                  >
+                    <img
+                      src="./src/img/undraw_percentages_0rur.svg"
+                      class="w-75"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-5 pt-5 wow animate__fadeInUp ani-delay-5">
+                <div class="container-fluid">
+                  <h3 class="text-center">What can I do?</h3>
+                  <div
+                    class="
+                      row
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                      project-slide
+                    "
+                  >
+                    <div class="col-12 col-md-4">
+                      <div class="card m-3 shadow bg-light">
+                        <div class="card-body ">
+                          <div class="container">
+                            <div class="row d-flex justify-content-center align-items-center">
+                              <img
+                                src="./src/img/undraw_Responsive_re_e1nn.svg"
+                                class="w-75 card-img-top"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <p class="text-center py-4">Responsive Websites</စ>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card shadow bg-light m-3">
+                        <div class="card-body">
+                          <div class="container">
+                            <div class="row d-flex justify-content-center align-items-center">
+                              <img
+                                src="./src/img/undraw_Mobile_re_q4nk.svg"
+                                class="w-75 card-img-top"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <p class="text-center py-4">Web Applications</စ>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card shadow bg-light m-3">
+                        <div class="card-body">
+                          <div class="container">
+                            <div class="row d-flex justify-content-center align-items-center">
+                              <img
+                                src="./src/img/undraw_select_player_64ca.svg"
+                                class="w-75 card-img-top"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <p class="text-center py-4">IOS Applications</စ>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card shadow bg-light m-3">
+                        <div class="card-body">
+                          <div class="container">
+                            <div class="row d-flex justify-content-center align-items-center">
+                              <img
+                                src="./src/img/undraw_Responsive_re_e1nn.svg"
+                                class="w-75 card-img-top"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <p class="text-center py-4">Game Development</စ>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card shadow bg-light m-3">
+                        <div class="card-body">
+                          <div class="container">
+                            <div class="row d-flex justify-content-center align-items-center">
+                              <img
+                                src="./src/img/undraw_Responsive_re_e1nn.svg"
+                                class="w-75 card-img-top"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <p class="text-center py-4">Hosting Services</စ>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card shadow bg-light m-3">
+                        <div class="card-body">
+                          <div class="container">
+                            <div class="row d-flex justify-content-center align-items-center">
+                              <img
+                                src="./src/img/undraw_Responsive_re_e1nn.svg"
+                                class="w-75 card-img-top"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <p class="text-center py-4">Practice with Aung</စ>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Contact" id="Contact">
+      <div class=" pt-5 min-vh-100">
+        <div class="container">
+          <div
+            class="
+              row
+              d-flex
+              justify-content-center
+              align-items-center
+              mt-5
+              pt-5
+            "
+          >
+            <div
+              class="col-12 col-md-7 wow animate__fadeInLeft ani-delay-2"
+              style="visibility: visible; animation-name: fadeInLeft"
+            >
+              <form action="#">
+                <div class="form-check-label text-center">
+                  <h3>Contact form</h3>
+                </div>
+                <div class="form-group py-2">
+                  <input type="text " class="form-control" placeholder="Name" />
+                </div>
+                <div class="form-group py-2">
+                  <input
+                    type="email "
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-group py-2">
+                  <input
+                    type="number "
+                    class="form-control"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div class="form-group py-2">
+                  <textarea
+                    name=""
+                    id=""
+                    rows="6"
+                    class="form-control"
+                    placeholder="Something u want to advice"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-danger">Submit</button>
+                </div>
+              </form>
+            </div>
+            <div
+              class="col-12 col-md-5 wow animate__fadeInRight ani-delay-4"
+              style="visibility: visible; animation-name: fadeInRight"
+            >
+              <div class="container">
+                <div
+                  class="row d-flex justify-content-center align-items-center"
+                >
+                  <div class="">
+                    <h3 class="text-center">Contact Info</h3>
+                    <div class="py-3">
+                      <i class="feather-phone h3 icon2 mx-3"></i
+                      ><a href="tel:+959768459824">+959768459824</a>
+                    </div>
+                    <div class="py-3">
+                      <i class="feather-mail h3 icon2 mx-3"></i
+                      ><a href="mailto:thua0524@gmail.com"
+                        >thua0524@gmail.com</a
+                      >
+                    </div>
+                    <div class="py-3">
+                      <i class="feather-facebook h3 icon2 mx-3"></i
+                      ><a href="https://www.facebook.com/offaung.offaung/"
+                        >Aung Myat Thu</a
+                      >
+                    </div>
+                    <div class="py-3">
+                      <i class="feather-github h3 icon2 mx-3"></i
+                      ><a href="https://github.com/Aung67890">Aung Myat Thu</a>
+                    </div>
+                    <div class="py-3">
+                      <i class="feather-twitter h3 icon2 mx-3"></i
+                      ><a href="https://mobile.twitter.com/aungmya78600461"
+                        >Aung Myat Thu</a
+                      >
+                    </div>
+                    <div class="py-3 d-flex">
+                      <i class="feather-home h3 icon2 mx-3"></i
+                      ><a href="">
+                        <p class="">
+                          No.3 Quarter, Myawaddy, Kayin State, Myanmar
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contaienr-fluid">
+          <div
+            class="col-12 py-5 my-5 wow animate__fadeIn ani-delay-3"
+            style="visibility: visible; animation-name: fadeIn"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.820894794472!2d98.48315551534772!3d16.685843727048447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dd9e2a16dc1e3f%3A0x5cf7a5ce1226195a!2sGood%20To%20Go%20restaurant!5e0!3m2!1smy!2sth!4v1627485056707!5m2!1smy!2sth"
+              width="100%"
+              height="600px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="">
+        <p class="text-center">
+          Copyright by Aung Myat Thu All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./vendor/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./vendor/wow/wow.js"></script>
+    <script src="./vendor/way_point/jquery.waypoints.min.js"></script>
+    <script src="./vendor/counter_up/counter_up.js"></script>
+    <script src="./vendor/venobox/venobox.min.js"></script>
+    <script src="./vendor/slick/slick.min.js"></script>
+    <script src="./vendor/progress.js"></script>
+    <script src="./vendor/typed.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+      $(".nav-link").click(function () {
+        $(".navbar-collapse").toggleClass("show");
+        $(".navbar-toggler").toggle();
+        $(".navbar-toggler-cross").toggleClass("d-none");
+      });
+
+      var typed = new Typed(".typeText", {
+        strings: ["Aung Myat Thu", "A FreeLancer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
